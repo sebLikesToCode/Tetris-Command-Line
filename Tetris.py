@@ -277,6 +277,7 @@ last_drop = time.time()
 spin_time = 0.2
 last_spin = time.time()
 while not gameEnd:
+    print("\033[?25l", end="")
     if keyboard.is_pressed("s"):
         drop_time = 0.1
     else:
